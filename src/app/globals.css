@@ -43,3 +43,7 @@ dd {
   min-width: 1000px;
   margin: 0 auto;
 }
+
+.main-centent {
+  min-height: 600px;
+}

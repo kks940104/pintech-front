@@ -10,7 +10,7 @@ import sizes from '../../styles/sizes'
 import logo from '../../assets/images/logo.png'
 
 const { white, primary, light, dark } = colors
-const { small, normal, medium, big } = sizes
+const { medium, big } = sizes
 
 const StyledHeader = styled.header`
   .site-top {
