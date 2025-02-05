@@ -1,5 +1,11 @@
 'use client'
 import React from 'react'
-const Footer = () => {}
+import { styled } from 'styled-components'
 
-export default Footer
+const StyledFooter = styled.footer``
+
+const Footer = () => {
+  return <StyledFooter>사이트 하단영역</StyledFooter>
+}
+
+export default React.memo(Footer)
