@@ -1,4 +1,5 @@
 import StyledJsxRegistry from "./registry";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <StyledJsxRegistry>{children}</StyledJsxRegistry>
+      <body>
+        <StyledJsxRegistry>{children}</StyledJsxRegistry>
+      </body>
     </html>
   );
 }
