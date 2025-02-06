@@ -95,27 +95,25 @@ const Header = () => {
       <div className="site-top">
         <div className="layout-width">
           <div className="left">
-            <Link href="/" className="logo">
+            <Link href="/">
               <FaHome />
             </Link>
           </div>
           <div className="right">
-            <Link href="/member/join">
-              <FaUserPlus />
-              회원가입
-            </Link>
-            <Link href="member/login">
-              <SlLogin />
-              로그인
-            </Link>
+            <a href="/member/join">
+              <FaUserPlus /> 회원가입
+            </a>
+            <a href="/member/login">
+              <SlLogin /> 로그인
+            </a>
           </div>
         </div>
       </div>
       {/* site-top */}
       <div className="logo-search">
         <div className="layout-width">
-          <Link href="/">
-            <Image src={logo} alt="로고" />
+          <Link href="/" className="logo">
+            <Image src={logo} alt="로고" priority={true} />
           </Link>
 
           <StyledForm method="GET" action="/board/search" autoComplete="off">
@@ -126,12 +124,12 @@ const Header = () => {
           </StyledForm>
         </div>
       </div>
-      {/*logo */}
+      {/* logo-search */}
       <StyledMenu>
         <div className="layout-width">
-          <Link href="#">메뉴1</Link>
-          <Link href="#">메뉴2</Link>
-          <Link href="#">메뉴3</Link>
+          <a href="#">메뉴1</a>
+          <a href="#">메뉴2</a>
+          <a href="#">메뉴3</a>
         </div>
       </StyledMenu>
     </StyledHeader>
