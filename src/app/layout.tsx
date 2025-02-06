@@ -4,6 +4,7 @@ import Footer from './global/ui/outlines/Footer'
 import { CommonProvider } from './global/contexts/CommonContext'
 import { Metadata } from 'next'
 import './globals.css'
+import 'react-datepicker/dist/react-datepicker.css'
 
 export const metadata: Metadata = {
   title: '핀테크 과정 포트폴리오',
